@@ -22,10 +22,16 @@ h1 {
     font-size: 2.5em;
 }
 
+/* Style du conteneur d'images */
+#image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 /* Style des images */
-img {
-    display: block;
-    margin: 0 auto;
+.gallery-image {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -33,7 +39,7 @@ img {
     transition: transform 0.3s ease;
 }
 
-img:hover {
+.gallery-image:hover {
     transform: scale(1.05);
 }
 
@@ -57,11 +63,6 @@ p {
 @media (max-width: 768px) {
     h1 {
         font-size: 2em;
-    }
-
-    img {
-        width: 100%;
-        height: auto;
     }
 
     p {
