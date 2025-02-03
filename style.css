@@ -59,9 +59,9 @@ h1 {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 8px; /* Taille réduite */
     cursor: pointer;
-    font-size: 24px;
+    font-size: 18px; /* Taille de police réduite */
     border-radius: 50%;
     transition: background-color 0.3s ease;
 }
@@ -93,7 +93,11 @@ p {
     }
 
     .carousel-container {
-        max-width: 90%;
+        max-width: 400px; /* Largeur réduite pour les écrans moyens */
+    }
+
+    .gallery-image {
+        max-height: 250px; /* Hauteur réduite pour les écrans moyens */
     }
 
     p {
@@ -104,6 +108,14 @@ p {
 @media (max-width: 480px) {
     h1 {
         font-size: 1.5em;
+    }
+
+    .carousel-container {
+        max-width: 300px; /* Largeur réduite pour les petits écrans */
+    }
+
+    .gallery-image {
+        max-height: 200px; /* Hauteur réduite pour les petits écrans */
     }
 
     p {
