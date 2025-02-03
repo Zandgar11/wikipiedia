@@ -32,8 +32,8 @@ h1 {
 
 /* Style des images */
 .gallery-image {
-    max-width: 100%;
-    height: auto;
+    max-width: 300px; /* Largeur maximale réduite */
+    height: auto; /* Hauteur ajustée automatiquement */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
@@ -65,6 +65,10 @@ p {
         font-size: 2em;
     }
 
+    .gallery-image {
+        max-width: 250px; /* Largeur réduite pour les écrans moyens */
+    }
+
     p {
         font-size: 1em;
     }
@@ -73,6 +77,10 @@ p {
 @media (max-width: 480px) {
     h1 {
         font-size: 1.5em;
+    }
+
+    .gallery-image {
+        max-width: 200px; /* Largeur réduite pour les petits écrans */
     }
 
     p {
