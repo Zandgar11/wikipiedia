@@ -8,7 +8,8 @@ const imageFiles = [
     "img3.jpg",
     "img4.jpg",
     "img5.jpg",
-    "img6.jpg"
+    "img6.jpg",
+    "img7.jpg"
 ];
 
 // Récupérer le conteneur d'images
