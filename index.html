@@ -9,7 +9,16 @@
 <body>
     <h1>Wiki-Pied-Dia, Wikipedia des pieds</h1>
     <hr>
-    <div id="image-container"></div> <!-- Conteneur pour les images -->
+
+    <!-- Conteneur du carrousel -->
+    <div class="carousel-container">
+        <button class="carousel-button prev" onclick="prevImage()">&#10094;</button> <!-- Bouton précédent -->
+        <div class="carousel">
+            <div id="image-container" class="carousel-inner"></div> <!-- Conteneur des images -->
+        </div>
+        <button class="carousel-button next" onclick="nextImage()">&#10095;</button> <!-- Bouton suivant -->
+    </div>
+
     <hr>
     <p>Ces pieds sont sous droit d'auteur. Bienvenue sur Wiki-Pied-Dia, un rassemblement clandestin de pieds. Pour faire grandir le wiki, envoyez un de vos pieds. Merci.</p>
 
