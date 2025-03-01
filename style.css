@@ -34,17 +34,25 @@ h1 {
 /* Conteneur des images */
 .carousel {
     display: flex;
+    width: 100%; /* Ajusté pour éviter le débordement */
+    overflow: hidden;
+}
+
+/* Conteneur interne des images */
+.carousel-inner {
+    display: flex;
+    width: 100%;
     transition: transform 0.5s ease-in-out;
 }
 
 /* Style des images */
 .gallery-image {
-    min-width: 100%;
+    width: 100%; /* Chaque image prend toute la largeur du conteneur */
     max-height: 300px;
     object-fit: contain; /* Affiche l'image entière sans la couper */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    flex-shrink: 0; /* Empêche les images de se réduire */
 }
 
 /* Boutons de navigation */
