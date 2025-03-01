@@ -25,7 +25,8 @@ h1 {
 /* Conteneur du carrousel */
 .carousel-container {
     position: relative;
-    max-width: 500px; /* Largeur maximale réduite */
+    max-width: 100%;
+    width: 500px; /* Largeur ajustée */
     margin: 0 auto;
     overflow: hidden;
 }
@@ -36,16 +37,11 @@ h1 {
     transition: transform 0.5s ease-in-out;
 }
 
-/* Conteneur interne des images */
-.carousel-inner {
-    display: flex;
-}
-
 /* Style des images */
 .gallery-image {
-    min-width: 100%; /* Chaque image prend toute la largeur du conteneur */
-    max-height: 300px; /* Hauteur maximale réduite */
-    object-fit: cover; /* Ajuster l'image pour couvrir l'espace */
+    min-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
@@ -59,9 +55,9 @@ h1 {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 8px; /* Taille réduite */
+    padding: 6px; /* Taille réduite */
     cursor: pointer;
-    font-size: 18px; /* Taille de police réduite */
+    font-size: 16px; /* Taille de police légèrement réduite */
     border-radius: 50%;
     transition: background-color 0.3s ease;
 }
@@ -93,11 +89,11 @@ p {
     }
 
     .carousel-container {
-        max-width: 400px; /* Largeur réduite pour les écrans moyens */
+        width: 400px;
     }
 
     .gallery-image {
-        max-height: 250px; /* Hauteur réduite pour les écrans moyens */
+        max-height: 250px;
     }
 
     p {
@@ -111,14 +107,19 @@ p {
     }
 
     .carousel-container {
-        max-width: 300px; /* Largeur réduite pour les petits écrans */
+        width: 90%; /* Utilisation de % pour plus de flexibilité */
     }
 
     .gallery-image {
-        max-height: 200px; /* Hauteur réduite pour les petits écrans */
+        max-height: 200px;
     }
 
     p {
         font-size: 0.9em;
+    }
+
+    .carousel-button {
+        padding: 5px;
+        font-size: 14px;
     }
 }
